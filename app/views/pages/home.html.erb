@@ -1,2 +1,51 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="banner" >
+  <div class="container background-text">
+    <h1>ATOUT</h1>
+    <h2>JARDINS - PLANTES</h2>
+  </div>
+</div>
+
+<div class="cards">
+  <div class="box_one">
+    <div class="card_one" id="lesjardins">
+      <h3>LES JARDINS</h3>
+      <h4>-</h4>
+      <p>Concevoir le jardin d'aujourd'hui et le penser pour demain...<p>
+      <p>Conception, création, restauration, entretien des parcs et des espaces verts.</p>
+      <p>Notre rôle est de faire de votre jardin un lieu de bien-être, de caractère,tout en étant en accord avec votre personnalité. Nous sommes des créateurs d’espaces et d’ambiances.</p>
+      <p>Nous sollicitons la nature pour vous offrir des moments de sérénité, de bonheur, de partage</p>
+      <p>Nos prestations de jardin : Débroussaillage, élagage, entretien, travaux d’aménagement, arrosage automatique, engazonnement, gazon synthétique, plantations, murets, enrochements, terrasse, IPEP…</p>
+    </div>
+    <div class="card_two">
+      <%= image_tag "garden.jpg" %>
+    </div>
+    <div class="card_three">
+      <%= image_tag "pepiniere2.jpg" %>
+    </div>
+    <div class="card_four" id="lapepiniere">
+      <h3>LA PÉPINIÈRE</h3>
+      <h4>-</h4>
+      <p>Forte d’un savoir-faire en horticulture, notre pépinière Atout Plantes, disposant d’un espace vente et conseils, vous propose plus de 300 essences acclimatées et cultivées sur nos serres adaptées à tous les budgets (plantes, arbres, arbustes, fleurs) associées à des conseils prodigués par nos jardiniers qualifiés.</p>
+      <p>Cet « Atout » représentatif d’une alliance entre production et création vous permettra de choisir la composition de votre jardin tout en exprimant vos aspirations, vos désirs des plus simples jusqu’aux plus extravagants.</p>
+    </div>
+  </div>
+</div>
+<%# <%= render "shared/contact" %>
+<div class="footer" id="apropos">
+  <div class="location">
+    <h3>NOTRE PÉPINIÈRE</h3>
+    <p>Adresse : 3507 Route départementale 8 </p>
+    <p>Saint-Aygulf, France, 83370</p>
+    <p>Tél : 04 94 44 28 67</p>
+    <p>E-mail : romainbenit@atoutjardin.com</p>
+  </div>
+  <div class="hours">
+    <h3>HORAIRES</h3>
+    <p>Lun - Ven : 8 h - 12h / 13h30 - 18h30</p>
+    <p>Samedi : 9 h - 12h / 13h30 - 18h30</p>
+    <p>Dimanche : Fermé</p>
+  </div>
+</div>
+<div class="social_icons">
+  <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+</div>
