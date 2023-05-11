@@ -5,4 +5,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+  resources :contacts, only: %i[new create]
+  get '/contacts', to: 'contacts#new', as: 'contact'
+  get 'contacts/sent'
 end

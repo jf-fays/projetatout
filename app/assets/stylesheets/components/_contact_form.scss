@@ -1,0 +1,60 @@
+.contact{
+  margin-left: 35px;
+  margin-right: 35px;
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(flower.jpg);
+  background-attachment: fixed;
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 15px rgba(217, 205, 205, 0.536);
+}
+
+.contact_text{
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 648px;
+  height: 348px;
+  display: flex;
+  justify-content: center;
+  // text-align: center;
+  align-items: center;
+  flex-direction:column;
+  margin: auto;
+}
+
+.contact_text h1{
+  color: rgba( 169, 104, 84, 100%);
+  font-size: 17px;
+  padding-top: 18px;
+}
+
+.field{
+  display: flex;
+  flex-direction: column;
+  padding: 24px 0 18px 0;
+}
+
+.field_contact{
+  display: flex;
+  gap: 18px;
+}
+
+.field_name{
+  display: flex;
+  flex-direction: column;
+}
+
+.field_email{
+  display: flex;
+  flex-direction: column;
+}
+
+.field_content{
+  display: flex;
+  flex-direction: column;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
