@@ -16,6 +16,8 @@ Rails.application.configure do
     read_timeout:    5
   }
 
+  config.action_mailer.perform_deliveries = true
+  config.mailer_sender = ENV.fetch['GMAIL_USERNAME']
   # Code is not reloaded between requests.
   config.cache_classes = true
 
