@@ -6,7 +6,7 @@ class Contact < MailForm::Base
 
   def headers
     { subject: "Formulaire de contact",
-      to: "fays.jf@gmail.com",
+      to: Rails.application.credentials.dig(:gmail_smtp, :email_receiver),
       from: %("#{name}" <#{email}>) }
   end
 end
