@@ -1,56 +1,105 @@
-.contact{
-  margin-left: 35px;
-  margin-right: 35px;
-  height: 600px;
-  background-position: center;
-  background-size: cover;
-  background-image: url(flower.jpg);
-  background-attachment: fixed;
-  justify-content: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 0 15px rgba(217, 205, 205, 0.536);
+//=====================================================//
+//==================== phone style ====================//
+//=====================================================//
+
+@media screen and (min-width: 350px){
+  .contact{
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(flower.jpg);
+    background-attachment: fixed;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px rgba(217, 205, 205, 0.536);
+  }
+
+  #new_contact{
+    width: 90%;
+  }
+
+  .contact_text{
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 310px;
+    height: 376px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    margin: auto;
+  }
+
+  .contact_text h1{
+    color: rgba( 169, 104, 84, 100%);
+    font-size: 17px;
+    padding-top: 18px;
+  }
+
+  .field{
+    padding: 8px 0 18px 0;
+  }
+
+  .field_contact{
+    display: grid;
+
+    gap: 12px;
+  }
+
+  .field_name, .field_email{
+    display: grid;
+  }
+
+  .field_content{
+    display: grid;
+    flex-direction: column;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+  .actions{
+    display: flex;
+    justify-content: center;
+  }
 }
 
-#new_contact{
-  width: 90%;
-}
 
-.contact_text{
-  background-color: rgba(255, 255, 255, 0.7);
-  width: 680px;
-  height: 348px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction:column;
-  margin: auto;
-}
+//=====================================================//
+//=================== desktop style ===================//
+//=====================================================//
 
-.contact_text h1{
-  color: rgba( 169, 104, 84, 100%);
-  font-size: 17px;
-  padding-top: 18px;
-}
+@media screen and (min-width: 1200px) {
+  .contact{
+    margin-left: 35px;
+    margin-right: 35px;
+    height: 600px;
 
-.field{
-  padding: 24px 0 18px 0;
-}
+  }
 
-.field_contact{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 18px;
-}
+  #new_contact{
+    width: 90%;
+  }
 
-.field_name, .field_email{
-  display: grid;
-}
+  .contact_text{
 
-.field_content{
-  display: grid;
-  flex-direction: column;
-  padding-top: 18px;
-  padding-bottom: 18px;
+    width: 680px;
+    height: 348px;
+
+  }
+
+  .field{
+    padding: 24px 0 18px 0;
+  }
+
+  .field_contact{
+
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+
+  .actions{
+    display: flex;
+    justify-content: flex-start;
+  }
 }
