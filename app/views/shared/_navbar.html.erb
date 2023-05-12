@@ -8,7 +8,13 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="nav-link-text">
+    <%# <div class="nav-link-text"> %>
+    <%# </div> %>
+
+    <div class="navbar-login">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent", style="float:right;">
+        <ul class="navbar-nav me-auto">
+        <div class="nav-link-text">
       <li class="nav-item">
         <%= link_to "Les jardins", '#lesjardins', class: "navbar-link" %>
       </li>
@@ -21,11 +27,7 @@
       <li class="nav-item">
         <%= link_to "À propos", "#apropos", class: "navbar-link" %>
       </li>
-    </div>
-
-    <div class="navbar-login">
-      <div class="collapse navbar-collapse" id="navbarSupportedContent", style="float:right;">
-        <ul class="navbar-nav me-auto">
+       </div>
           <% if user_signed_in? %>
             <%# <li class="nav-item active"> %>
               <%# <%= link_to "Home", root_path, class: "nav-link" %>
