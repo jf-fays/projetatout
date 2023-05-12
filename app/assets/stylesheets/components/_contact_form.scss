@@ -13,9 +13,14 @@
   box-shadow: 0 0 15px rgba(217, 205, 205, 0.536);
 }
 
+#new_contact{
+  width: 90%;
+}
+
 .contact_text{
   background-color: rgba(255, 255, 255, 0.7);
-  width: 648px;
+  width: 680px;
+  -webkit-width: 680px;
   height: 348px;
   display: flex;
   justify-content: center;
@@ -32,13 +37,14 @@
 }
 
 .field{
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
   padding: 24px 0 18px 0;
 }
 
 .field_contact{
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 18px;
 }
 
