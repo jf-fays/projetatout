@@ -20,11 +20,9 @@
 .contact_text{
   background-color: rgba(255, 255, 255, 0.7);
   width: 680px;
-  -webkit-width: 680px;
   height: 348px;
   display: flex;
   justify-content: center;
-  // text-align: center;
   align-items: center;
   flex-direction:column;
   margin: auto;
@@ -37,8 +35,6 @@
 }
 
 .field{
-  // display: flex;
-  // flex-direction: column;
   padding: 24px 0 18px 0;
 }
 
@@ -48,18 +44,12 @@
   gap: 18px;
 }
 
-.field_name{
-  display: flex;
-  flex-direction: column;
-}
-
-.field_email{
-  display: flex;
-  flex-direction: column;
+.field_name, .field_email{
+  display: grid;
 }
 
 .field_content{
-  display: flex;
+  display: grid;
   flex-direction: column;
   padding-top: 18px;
   padding-bottom: 18px;
