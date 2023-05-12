@@ -10,8 +10,9 @@ class ContactsController < ApplicationController
     if @contact.deliver
       redirect_to "#contact", notice: "Message envoyé!"
     else
-      flash.now[:error] = "Impossible d'envoyer le message"
-      render :new, status: :unprocessable_entity
+      # flash.now[:error] = "Impossible d'envoyer le message, veuillez remplir tous les champs requis!"
+      redirect_to "#contact", notice: "Impossible d'envoyer le message, veuillez remplir tous les champs requis!"
+      # render :new, status: :unprocessable_entity
     end
   end
 

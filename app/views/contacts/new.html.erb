@@ -1,0 +1,51 @@
+<div class="contact" id="contact">
+  <div class="contact_text">
+      <h1 class="text-center">CONTACT - DEMANDES SPÉCIALES</h1>
+
+      <%= form_for @contact do |form| %>
+
+      <% if @contact.errors.any? %>
+          <div id="error_explanation" class="bg-rose-200 pt-3 pb-1 mb-4 px-4 rounded-md">
+              <div class="font-bold text-rose-700 text-sm pb-4"><%= pluralize(@contact.errors.count, "error") %> prohibited this page from being saved:</div>
+
+              <ul class="pb-0 mb-0">
+                  <% @contact.errors.each do |error| %>
+                      <li class="text-rose-600 pl-4 text-sm"><%= error.full_message %></li>
+                  <% end %>
+              </ul>
+          </div>
+      <% end %>
+
+
+    <div class="field">
+        <div class="field_contact">
+          <div class="field_name">
+            <%= form.label :"Nom *" %>
+            <%= form.text_field :name %>
+          </div>
+
+          <div class="field_email">
+              <%= form.label :"email *" %>
+              <%= form.email_field :email %>
+          </div>
+        </div>
+
+          <div class="field_content" >
+              <%= form.label :"Rédigez votre message ici *" %>
+              <%= form.text_area :message, rows: "4" %>
+          </div>
+
+
+          <div class="hidden d-none">
+              <%= form.label :nickname %>
+              <%= form.text_field :nickname %>
+          </div>
+
+          <div class="actions flex justify-end">
+              <%= form.submit "Envoyer" %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
