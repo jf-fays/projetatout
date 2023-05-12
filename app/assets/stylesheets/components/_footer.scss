@@ -1,44 +1,60 @@
-.footer{
-  // margin-left: 35px;
-  // margin-right: 35px;
-  background-color: rgba( 17, 49, 50, 100%);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+//=====================================================//
+//==================== phone style ====================//
+//=====================================================//
+
+@media screen and (min-width: 350px){
+  .footer{
+    background-color: rgba( 17, 49, 50, 100%);
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .location{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction:column;
+    margin-top: 80px;
+  }
+
+  .location h3, .hours h3{
+    font-size: 18px;
+    color: white;
+    letter-spacing: 0.45em;
+    font-family: montserrat;
+    font-weight: 300;
+    padding-bottom: 24px;
+  }
+
+  .location p, .hours p{
+    font-size: 14px;
+    color: white;
+    font-family: montserrat;
+    font-weight: 200;
+    margin-bottom: 8px;
+  }
+
+  .hours{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction:column;
+    margin-top: 80px;
+  }
+
 }
 
-.location{
-  height: 200px;
-  width: 100%;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  flex-direction:column;
-  margin-top: 80px;
-}
 
-.location h3, .hours h3{
-  font-size: 18px;
-  color: white;
-  letter-spacing: 0.45em;
-  font-family: montserrat;
-  font-weight: 300;
-  padding-bottom: 24px;
-}
+//=====================================================//
+//=================== desktop style ===================//
+//=====================================================//
 
-.location p, .hours p{
-  font-size: 14px;
-  color: white;
-  font-family: montserrat;
-  font-weight: 200;
-  margin-bottom: 8px;
-}
-
-.hours{
-  height: 200px;
-  width: 100%;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  flex-direction:column;
-  margin-top: 80px;
+@media screen and (min-width: 1200px) {
+  .footer{
+    grid-template-columns: 1fr 1fr;
+  }
 }
