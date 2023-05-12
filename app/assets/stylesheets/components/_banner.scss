@@ -59,50 +59,50 @@
 
 @media screen and (min-width: 1200px) {
   .banner {
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
     height: 90vh;
-    background-color: rgba( 237, 237, 238, 100%);
+    // background-color: rgba( 237, 237, 238, 100%);
   }
 
   .banner .container {
-    text-align: center;
+    // text-align: center;
   }
 
   .background-text h1{
-    font-family: 'DOCK11', sans-serif;
-    font-weight: bold;
+    // font-family: 'DOCK11', sans-serif;
+    // font-weight: bold;
     font-size: 300px;
-    margin: 0;
-    letter-spacing: 20px;
-    color: transparent;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    // margin: 0;
+    // letter-spacing: 20px;
+    // color: transparent;
+    // background-clip: text;
+    // -webkit-text-fill-color: transparent;
+    // -webkit-background-clip: text;
 
-    background-image: url("background.jpeg");
-    background-size: 120%;
-    animation: bg-animation 40s cubic-bezier(0.3,0,0.7,1) infinite;
+    // background-image: url("background.jpeg");
+    // background-size: 120%;
+    // animation: bg-animation 40s cubic-bezier(0.3,0,0.7,1) infinite;
   }
   .background-text h2{
-    font-family: 'DOCK11', sans-serif;
-    font-weight: bold;
+    // font-family: 'DOCK11', sans-serif;
+    // font-weight: bold;
     font-size: 78px;
-    margin: 0;
-    letter-spacing: 20px;
-    color: transparent;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+  //   margin: 0;
+  //   letter-spacing: 20px;
+  //   color: transparent;
+  //   background-clip: text;
+  //   -webkit-text-fill-color: transparent;
+  //   -webkit-background-clip: text;
 
-    background-image: url("background.jpg");
-    background-size: 120%;
-    animation: bg-animation 40s cubic-bezier(0.3,0,0.7,1) infinite;
+  //   background-image: url("background.jpg");
+  //   background-size: 120%;
+  //   animation: bg-animation 40s cubic-bezier(0.3,0,0.7,1) infinite;
   }
 
-  @keyframes bg-animation{
-    0% {background-position: 0% 0%;}
-    50% {background-position: 100% 100%;}
-    100% {background-position: 0% 0%;}
-  }
+  // @keyframes bg-animation{
+  //   0% {background-position: 0% 0%;}
+  //   50% {background-position: 100% 100%;}
+  //   100% {background-position: 0% 0%;}
+  // }
 }
