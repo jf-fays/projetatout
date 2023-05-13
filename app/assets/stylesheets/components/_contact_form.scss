@@ -65,6 +65,45 @@
 }
 
 
+
+//=====================================================//
+//=================== tablet style ===================//
+//=====================================================//
+
+@media screen and (min-width: 750px) {
+  .contact{
+    margin-left: 35px;
+    margin-right: 35px;
+    height: 450px;
+    background-attachment: fixed;
+  }
+
+  #new_contact{
+    width: 90%;
+  }
+
+  .contact_text{
+    width: 500px;
+    height: 340px;
+  }
+
+  .field{
+    padding: 24px 0 18px 0;
+  }
+
+  .field_contact{
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+
+  .actions{
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+
+
 //=====================================================//
 //=================== desktop style ===================//
 //=====================================================//
@@ -74,7 +113,7 @@
     margin-left: 35px;
     margin-right: 35px;
     height: 600px;
-
+    background-attachment: fixed;
   }
 
   #new_contact{
@@ -82,10 +121,8 @@
   }
 
   .contact_text{
-
     width: 680px;
     height: 348px;
-
   }
 
   .field{
@@ -93,7 +130,6 @@
   }
 
   .field_contact{
-
     grid-template-columns: 1fr 1fr;
     gap: 18px;
   }
