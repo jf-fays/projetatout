@@ -10,8 +10,8 @@
   }
 
   .box_one{
-  display: grid;
-  grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
   .card_one{
@@ -85,7 +85,38 @@
 }
 
 
+//=====================================================//
+//=================== tablet style ===================//
+//=====================================================//
 
+@media screen and (min-width: 750px) {
+  .cards{
+    margin: 35px 35px 0 35px;
+  }
+
+  .box_one{
+  grid-template-columns: 1fr 1fr;
+  }
+
+  .card_one{
+    font-size: 0.75rem;
+    height: 460px;
+  }
+
+  .card_one h4{
+    font-size: 40px;
+  }
+
+  .card_two, .card_three{
+    height: 460px;
+    width: 100%;
+  }
+
+  .card_four{
+    height: 460px;
+    font-size: 0.75rem;
+  }
+}
 
 //=====================================================//
 //=================== desktop style ===================//
@@ -102,6 +133,8 @@
 
   .card_one{
     padding: 0 80px;
+    height: 650px;
+    font-size: 1rem;
   }
 
   .card_one h4{
@@ -116,6 +149,7 @@
   .card_four{
     height: 650px;
     padding: 0 80px;
+    font-size: 1rem;
   }
 
   .card_four h4{
