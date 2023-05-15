@@ -16,16 +16,20 @@
         <ul class="navbar-nav me-auto">
           <div class="nav-link-text">
             <li class="nav-item">
-              <%= link_to "Les jardins", '#lesjardins', class: "navbar-link" %>
+              <a href="#lesjardins" class= "navbar-link">Les jardins</a>
+              <%# <%= link_to "Les jardins", '#lesjardins', class: "navbar-link" %>
             </li>
             <li class="nav-item">
-              <%= link_to "La pépinière", "#lapepiniere", class: "navbar-link" %>
+              <a href="#lapepiniere" class= "navbar-link">La pépinière</a>
+              <%# <%= link_to "La pépinière", "#lapepiniere", class: "navbar-link" %>
             </li>
             <li class="nav-item">
-              <%= link_to "Contact", "#contact", class: "navbar-link" %>
+              <a href="#contact" class= "navbar-link">Contact</a>
+              <%# <%= link_to "Contact", "#contact", class: "navbar-link" %>
             </li>
             <li class="nav-item">
-              <%= link_to "Nous trouver", "#apropos", class: "navbar-link" %>
+              <a href="#noustrouver" class= "navbar-link">Nous trouver</a>
+              <%# <%= link_to "Nous trouver", "#apropos", class: "navbar-link" %>
             </li>
           </div>
           <% if user_signed_in? %>
