@@ -55,8 +55,8 @@
 //=====================================================//
 
 @media screen and (min-width: 750px) {
-  .footer{
-    grid-template-columns: 1fr 1fr;
+  .footer-text{
+    display: flex;
   }
 }
 
@@ -74,15 +74,11 @@
 //=====================================================//
 
 @media screen and (min-width: 1200px) {
-  .footer{
-    grid-template-columns: 1fr 1fr;
+  .location h3, .hours h3{
+    font-size: 18px;
   }
-}
 
-.location h3, .hours h3{
-  font-size: 18px;
-}
-
-.location p, .hours p{
-  font-size: 14px;
+  .location p, .hours p{
+    font-size: 14px;
+  }
 }
