@@ -6,7 +6,7 @@
   .banner {
     display: flex;
     align-items: center;
-    height: 48vh;
+    height: 44vh;
     background-color: rgba( 237, 237, 238, 100%);
   }
 
@@ -15,9 +15,9 @@
   }
 
   .background-text h1{
-    font-family: 'futura', sans-serif;
+    font-family: 'busorama', sans-serif;
     font-weight: bold;
-    font-size: 79px;
+    font-size: 90px;
     margin: 0;
     letter-spacing: 14px;
     color: transparent;
@@ -30,9 +30,9 @@
     animation: bg-animation 40s cubic-bezier(0.3,0,0.7,1) infinite;
   }
   .background-text h2{
-    font-family: 'futura', sans-serif;
+    font-family: 'busorama', sans-serif;
     font-weight: bold;
-    font-size: 52px;
+    font-size: 18px;
     margin: 0;
     letter-spacing: 10px;
     color: transparent;
@@ -60,15 +60,15 @@
 
 @media screen and (min-width: 750px) {
   .banner {
-    height: 90vh;
+    height: 88vh;
   }
 
   .background-text h1{
-    font-size: 160px;
+    font-size: 214px;
   }
 
   .background-text h2{
-    font-size: 36px;
+    font-size: 62px;
   }
 }
 
@@ -82,10 +82,10 @@
   }
 
   .background-text h1{
-    font-size: 290px;
+    font-size: 380px;
   }
 
   .background-text h2{
-    font-size: 74px;
+    font-size: 125px;
   }
 }
